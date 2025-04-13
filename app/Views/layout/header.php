@@ -14,8 +14,11 @@
     <div class="flex items-center gap-10 -ml-32">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <img src="<?= base_url('/images/logo.png') ?>" alt="HRIS Logo" class="h-24 w-auto">
-      </div>
+  <div class="h-24 w-24 flex items-center justify-center text-[#0E1D51] font-bold text-xl">
+    LOGO
+  </div>
+</div>
+
 
        <!-- Navigation - Desktop -->
     <nav class="hidden sm:flex space-x-6 text-lg text-gray-800 items-center relative"></nav>

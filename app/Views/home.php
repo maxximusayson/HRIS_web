@@ -82,7 +82,7 @@
 
       <!-- Image Card with Fixed Caption -->
       <div class="relative w-[600px] h-[350px] rounded-2xl shadow-xl shrink-0 overflow-hidden">
-        <img src="<?= base_url('/images/hero-woman.png') ?>" alt="HRIS Feature 1" class="w-full h-full object-cover">
+        <img src="<?= base_url('/images/home/h5.jpg') ?>" alt="HRIS Feature 1" class="w-full h-full object-cover">
         <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 text-center">
           <p class="text-white text-2xl md:text-3xl font-semibold tracking-wide">Seamless Employee Experience</p>
         </div>
@@ -172,6 +172,155 @@
     animation: scroll 70s linear infinite;
   }
 </style>
+
+
+
+
+<section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
+
+  <!-- Grid Lines -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <!-- Vertical lines -->
+    <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <!-- Horizontal lines -->
+    <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-12 flex flex-col md:flex-row items-center gap-12">
+
+<!-- Video -->
+<div class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+  <iframe src="https://www.youtube.com/embed/K4TOrB7at0Y?si=yx4sHB4MSF_SaW52" 
+          frameborder="0" 
+          allowfullscreen 
+          class="rounded-lg shadow-lg w-full h-96"></iframe> <!-- Fixed height -->
+</div>
+
+
+
+    <!-- Text Content -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-[#0E1D51] mb-6 leading-tight">
+  Simple, Accurate, and<br>
+  Stress-Free People<br>
+  Management with Sprout
+</h2>
+
+
+      <p class="text-gray-700 mb-8 text-base md:text-lg">
+        Stay compliant and thrive with Sprout’s HR and Payroll solution. Get top-rated solutions and the expert support you need for managing your teams effectively in the Philippines.
+      </p>
+
+      <a href="#" class="inline-block bg-[#2563EB] text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-[#2563EB] transition-all">
+        BOOK A MEETING
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
+
+  <!-- Grid Lines -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <!-- Vertical lines -->
+    <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <!-- Horizontal lines -->
+    <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+  </div>
+
+  <h2 class="text-3xl font-semibold text-center text-gray-900 mb-8">Benefits of Using the HRIS Portal</h2>
+
+  <!-- Flex container for content and image -->
+  <div class="flex flex-col md:flex-row w-full max-w-7xl space-y-6 md:space-y-0 items-center justify-between">
+    <!-- Left side (Benefits) -->
+    <div class="space-y-6 w-full md:w-1/2">
+      <!-- Benefit 1 -->
+      <div class="border-b border-gray-200">
+        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(1)">
+          <span class="font-semibold text-lg">Improved Efficiency</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-1" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
+          <p>Streamline HR processes, automate tasks, and reduce manual work, making operations faster and more efficient.</p>
+        </div>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="border-b border-gray-200">
+        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(2)">
+          <span class="font-semibold text-lg">Data Security</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-2" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
+          <p>Keep employee data secure with encryption, controlled access, and regular audits to ensure privacy and compliance.</p>
+        </div>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="border-b border-gray-200">
+        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(3)">
+          <span class="font-semibold text-lg">Real-Time Reporting</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-3" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
+          <p>Access up-to-date reports at any time, allowing better decision-making and timely interventions when needed.</p>
+        </div>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div class="border-b border-gray-200">
+        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(4)">
+          <span class="font-semibold text-lg">Employee Self-Service</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-4" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
+          <p>Allow employees to update their personal information, access pay slips, and submit requests without HR intervention.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side (Large Image) -->
+    <div class="w-full md:w-1/2 z-20 md:ml-6">
+      <img src="/images/home/h1.jpg" alt="HRIS Portal" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+  </div>
+
+</section>
+
+<script>
+  function toggleDropdown(index) {
+    const content = document.getElementById('content-' + index);
+    const arrow = document.getElementById('arrow-' + index);
+    const isHidden = content.classList.contains('hidden');
+    
+    // Toggle visibility of content
+    content.classList.toggle('hidden', !isHidden);
+
+    // Rotate arrow
+    arrow.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+  }
+</script>
+
 
 </body>
 </html>
