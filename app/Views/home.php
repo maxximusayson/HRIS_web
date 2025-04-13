@@ -13,6 +13,7 @@
 
     <?= view('layout/header') ?>
 
+    <!-- Section 1 -->
     <section class="relative bg-gradient-to-t from-[#CAF0F8] to-white py-40 md:py-48 font-[Poppins] overflow-hidden -mt-24">
  
   <!-- Background Lines (behind content) -->
@@ -37,28 +38,32 @@
 
     <!-- Text Content -->
     <div class="w-full md:w-1/2 text-center md:text-left">
-      <h1 class="text-5xl md:text-7xl font-extrabold text-[#0E1D51] leading-tight mb-8">
-        Putting People First<br>
-        with Smart HR<br>
-        Technology
-      </h1>
-      <p class="text-gray-700 mb-10 text-lg md:text-2xl leading-relaxed max-w-xl mx-auto md:mx-0">
-        Empower your business with intuitive, people-centric HR tools built for today’s workplace. Streamline processes and elevate your team’s potential.
-      </p>
-      <div class="flex justify-center md:justify-start space-x-4">
-        <a href="#" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition-all duration-300 shadow-lg z-20 relative">
-          Get Started
-        </a>
-        <a href="#" class="inline-block border border-blue-600 text-blue-700 px-8 py-3 rounded-full text-lg hover:bg-blue-100 transition-all duration-300 z-20 relative">
-          How it Works
-        </a>
-      </div>
+    <h1 class="text-6xl md:text-6xl font-extrabold text-[#0E1D51] leading-tight mb-8 text-center md:text-left max-w-2xl">
+  Putting People First with Smart HR Technology
+</h1>
+
+
+<p class="text-gray-700 mb-10 text-lg md:text-2xl leading-relaxed max-w-xl mx-auto md:mx-0 text-justify">
+  Empower your business with intuitive, people-centric HR tools built for today’s workplace. Streamline processes and elevate your team’s potential.
+</p>
+
+<div class="flex justify-center space-x-4">
+  <a href="#" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition-all duration-300 shadow-lg z-20 relative">
+    Get Started
+  </a>
+  <a href="#" class="inline-block border border-blue-600 text-blue-700 px-8 py-3 rounded-full text-lg hover:bg-blue-100 transition-all duration-300 z-20 relative">
+    How it Works
+  </a>
+</div>
+
     </div>
 
   </div>
 </section>
 
-<!-- Second Section with Modern Fixed Captions -->
+
+<!-- Section 2 -->
+
 <section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
 
   <!-- Background Lines -->
@@ -175,7 +180,7 @@
 
 
 
-
+<!-- Section Video -->
 <section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
 
   <!-- Grid Lines -->
@@ -208,7 +213,7 @@
     <h2 class="text-3xl md:text-4xl font-extrabold text-[#0E1D51] mb-6 leading-tight">
   Simple, Accurate, and<br>
   Stress-Free People<br>
-  Management with Sprout
+  Management with HRIS
 </h2>
 
 
@@ -217,7 +222,7 @@
       </p>
 
       <a href="#" class="inline-block bg-[#2563EB] text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-[#2563EB] transition-all">
-        BOOK A MEETING
+        GET STARTED
       </a>
     </div>
 
@@ -225,7 +230,7 @@
 </section>
 
 
-
+<!-- Section 3 -->
 <section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
 
   <!-- Grid Lines -->
@@ -323,6 +328,73 @@
   }
 </script>
 
+
+
+<!-- SECTION 4 -->
+
+<section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
+
+  <!-- Grid Lines -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <!-- Vertical lines -->
+    <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <!-- Horizontal lines -->
+    <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+  </div>
+<br><br>
+  <div class="max-w-7xl mx-auto px-6 z-10">
+  <h2 class="text-5xl font-bold text-center text-[#0E1D51] mb-8">Our HRIS Products</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Product 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Employee Management</h3>
+        <p class="text-gray-600">
+          Effortlessly manage employee records, track personal details, and maintain up-to-date information in a secure, centralized system.
+        </p>
+      </div>
+      <!-- Product 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Payroll Solutions</h3>
+        <p class="text-gray-600">
+          Automate payroll calculations, tax deductions, and ensure timely and accurate salary distribution, all while complying with local regulations.
+        </p>
+      </div>
+      <!-- Product 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Leave and Attendance</h3>
+        <p class="text-gray-600">
+          Track employee attendance and manage leave requests with ease. Ensure a smooth workflow with real-time data and customizable policies.
+        </p>
+      </div>
+      <!-- Product 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Performance Management</h3>
+        <p class="text-gray-600">
+          Assess and improve employee performance with customizable evaluation criteria, feedback tools, and goal tracking.
+        </p>
+      </div>
+      <!-- Product 5 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Recruitment Management</h3>
+        <p class="text-gray-600">
+          Simplify the hiring process with job posting management, candidate tracking, and interview scheduling—all in one platform.
+        </p>
+      </div>
+      <!-- Product 6 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Training & Development</h3>
+        <p class="text-gray-600">
+          Monitor employee skill development and manage training programs to foster growth and retention within your workforce.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
