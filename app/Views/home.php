@@ -240,64 +240,66 @@
     <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
   </div>
 
-  <h2 class="text-3xl font-semibold text-center text-gray-900 mb-8">Benefits of Using the HRIS Portal</h2>
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-8" style="color: #0E1D51;">
+  Benefits of Using the HRIS Portal
+</h2>
+
 
   <!-- Flex container for content and image -->
   <div class="flex flex-col md:flex-row w-full max-w-7xl space-y-6 md:space-y-0 items-center justify-between">
-    <!-- Left side (Benefits) -->
-    <div class="space-y-6 w-full md:w-1/2">
-      <!-- Benefit 1 -->
-      <div class="border-b border-gray-200">
-        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(1)">
-          <span class="font-semibold text-lg">Improved Efficiency</span>
-          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="content-1" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
-          <p>Streamline HR processes, automate tasks, and reduce manual work, making operations faster and more efficient.</p>
-        </div>
-      </div>
-
-      <!-- Benefit 2 -->
-      <div class="border-b border-gray-200">
-        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(2)">
-          <span class="font-semibold text-lg">Data Security</span>
-          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="content-2" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
-          <p>Keep employee data secure with encryption, controlled access, and regular audits to ensure privacy and compliance.</p>
-        </div>
-      </div>
-
-      <!-- Benefit 3 -->
-      <div class="border-b border-gray-200">
-        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(3)">
-          <span class="font-semibold text-lg">Real-Time Reporting</span>
-          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="content-3" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
-          <p>Access up-to-date reports at any time, allowing better decision-making and timely interventions when needed.</p>
-        </div>
-      </div>
-
-      <!-- Benefit 4 -->
-      <div class="border-b border-gray-200">
-        <button class="w-full text-left p-5 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg shadow-lg focus:outline-none hover:bg-gradient-to-l hover:from-teal-400 hover:to-blue-500 focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(4)">
-          <span class="font-semibold text-lg">Employee Self-Service</span>
-          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </button>
-        <div id="content-4" class="hidden px-5 py-3 text-gray-700 text-sm bg-gradient-to-r from-white via-transparent to-transparent rounded-lg shadow-md mt-2 z-20">
-          <p>Allow employees to update their personal information, access pay slips, and submit requests without HR intervention.</p>
-        </div>
-      </div>
+  <div class="space-y-6 w-full md:w-1/2">
+  <!-- Benefit 1 -->
+  <div class="border-b border-gray-200 relative">
+    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(1)">
+      <span class="font-semibold text-lg">Improved Efficiency</span>
+      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <div id="content-1" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+      <p>Streamline HR processes, automate tasks, and reduce manual work, making operations faster and more efficient.</p>
     </div>
+  </div>
+
+  <!-- Benefit 2 -->
+  <div class="border-b border-gray-200 relative">
+    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(2)">
+      <span class="font-semibold text-lg">Data Security</span>
+      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <div id="content-2" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+      <p>Keep employee data secure with encryption, controlled access, and regular audits to ensure privacy and compliance.</p>
+    </div>
+  </div>
+
+  <!-- Benefit 3 -->
+  <div class="border-b border-gray-200 relative">
+    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(3)">
+      <span class="font-semibold text-lg">Real-Time Reporting</span>
+      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <div id="content-3" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+      <p>Access up-to-date reports at any time, allowing better decision-making and timely interventions when needed.</p>
+    </div>
+  </div>
+
+  <!-- Benefit 4 -->
+  <div class="border-b border-gray-200 relative">
+    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(4)">
+      <span class="font-semibold text-lg">Employee Self-Service</span>
+      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    <div id="content-4" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+      <p>Allow employees to update their personal information, access pay slips, and submit requests without HR intervention.</p>
+    </div>
+  </div>
+</div>
 
     <!-- Right side (Large Image) -->
     <div class="w-full md:w-1/2 z-20 md:ml-6">
