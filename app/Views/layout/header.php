@@ -5,7 +5,8 @@
 <style>[x-cloak] { display: none !important; }</style>
 
 <!-- Header -->
-<header class="relative bg-gradient-to-b from-blue-500 to-white shadow-sm font-[Poppins] z-50" x-data="{ open: false }">
+<header class="relative bg-gradient-to-b from-[#CAF0F8] to-white shadow-sm font-[Poppins] z-50" x-data="{ open: false }">
+
   <!-- Top Navbar -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
 
@@ -16,6 +17,8 @@
         <img src="<?= base_url('/images/logo.png') ?>" alt="HRIS Logo" class="h-24 w-auto">
       </div>
 
+       <!-- Navigation - Desktop -->
+    <nav class="hidden sm:flex space-x-6 text-lg text-gray-800 items-center relative"></nav>
       <!-- Navigation -->
       <nav class="flex space-x-6 text-lg text-gray-800 items-center relative">
         <!-- HR Solutions Dropdown -->
@@ -163,4 +166,26 @@
       </a>
     </div>
   </div>
+
+
+     <!-- Mobile Toggle -->
+     <button @click="mobileMenu = !mobileMenu" class="sm:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path x-show="!mobileMenu" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          <path x-show="mobileMenu" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+       <!-- Mobile Menu -->
+  <div x-show="mobileMenu" x-transition x-cloak class="sm:hidden bg-white border-t border-gray-200 px-6 pb-6 space-y-4">
+    <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">HR Solutions</a>
+    <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">About Us</a>
+    <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Resources</a>
+    <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Customer Service</a>
+    <div class="pt-2">
+      <input type="text" placeholder="Search..." class="w-full px-4 py-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+    </div>
+    <a href="#" class="block w-full text-center bg-blue-600 text-white py-2 rounded-full font-medium hover:bg-blue-700">How it works</a>
+  </div>
+  
 </header>
