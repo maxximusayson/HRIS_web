@@ -96,20 +96,21 @@
       x-transition:leave-end="opacity-0 translate-y-2"
       class="absolute left-0 top-full mt-4 bg-white shadow-xl pt-4 pb-6 z-40 rounded-xl min-w-[300px]"
     >
-      <div class="px-6 text-gray-800 text-base font-medium space-y-4">
-        <div>
-          <a href="#" class="hover:text-blue-500 block">Company</a>
-          <p class="text-sm text-gray-500">Get to know our mission and vision.</p>
-        </div>
-        <div>
-          <a href="#" class="hover:text-blue-500 block">Our Team</a>
-          <p class="text-sm text-gray-500">Meet the people behind HRIS.</p>
-        </div>
-        <div>
-          <a href="#" class="hover:text-blue-500 block">Careers</a>
-          <p class="text-sm text-gray-500">Explore job opportunities with us.</p>
-        </div>
-      </div>
+    <div class="px-6 text-gray-800 text-base font-medium space-y-4">
+  <div>
+    <a href="<?= base_url('company') ?>" class="hover:text-blue-500 block">Company</a>
+    <p class="text-sm text-gray-500">Get to know our mission and vision.</p>
+  </div>
+  <div>
+    <a href="<?= base_url('team') ?>" class="hover:text-blue-500 block">Our Team</a>
+    <p class="text-sm text-gray-500">Meet the people behind HRIS.</p>
+  </div>
+  <div>
+    <a href="<?= base_url('careers') ?>" class="hover:text-blue-500 block">Careers</a>
+    <p class="text-sm text-gray-500">Explore job opportunities with us.</p>
+  </div>
+</div>
+
     </div>
   </div>
         <a href="#" class="hover:text-blue-600">Resources</a>
