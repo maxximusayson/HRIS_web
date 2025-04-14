@@ -8,6 +8,8 @@
     <!-- Your styles and scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
 </head>
 <body>
 
@@ -395,6 +397,82 @@
     </div>
   </div>
 </section>
+
+
+<!-- Section 5 -->
+<section class="bg-[#CAF0F8] py-20 font-[Poppins]">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-[#0E1D51] mb-12">Frequently Asked Questions</h2>
+    
+    <div class="space-y-4" x-data="{ selected: null }">
+
+      <!-- FAQ Item 1 -->
+      <div class="border border-gray-200 rounded-xl bg-white shadow">
+        <button 
+          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
+          @click="selected !== 1 ? selected = 1 : selected = null"
+        >
+          What is an HRIS system?
+          <span x-show="selected !== 1">+</span>
+          <span x-show="selected === 1">-</span>
+        </button>
+        <div x-show="selected === 1" x-collapse class="px-4 pb-4 text-gray-600">
+          An HRIS (Human Resource Information System) helps manage employee data, payroll, attendance, and HR processes all in one centralized platform.
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="border border-gray-200 rounded-xl bg-white shadow">
+        <button 
+          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
+          @click="selected !== 2 ? selected = 2 : selected = null"
+        >
+          Is your HRIS cloud-based?
+          <span x-show="selected !== 2">+</span>
+          <span x-show="selected === 2">-</span>
+        </button>
+        <div x-show="selected === 2" x-collapse class="px-4 pb-4 text-gray-600">
+          Yes! Our HRIS is fully cloud-based, so you can access and manage your employee data anytime, anywhere, securely.
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="border border-gray-200 rounded-xl bg-white shadow">
+        <button 
+          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
+          @click="selected !== 3 ? selected = 3 : selected = null"
+        >
+          Can I integrate it with payroll and attendance systems?
+          <span x-show="selected !== 3">+</span>
+          <span x-show="selected === 3">-</span>
+        </button>
+        <div x-show="selected === 3" x-collapse class="px-4 pb-4 text-gray-600">
+          Absolutely! Our HRIS is designed to integrate seamlessly with popular payroll, attendance, and ERP solutions.
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="border border-gray-200 rounded-xl bg-white shadow">
+        <button 
+          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
+          @click="selected !== 4 ? selected = 4 : selected = null"
+        >
+          Is technical support available?
+          <span x-show="selected !== 4">+</span>
+          <span x-show="selected === 4">-</span>
+        </button>
+        <div x-show="selected === 4" x-collapse class="px-4 pb-4 text-gray-600">
+          Yes, we provide 24/7 customer support and dedicated assistance for implementation and troubleshooting.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<?= view('layout/footer'); ?>
 
 </body>
 </html>
