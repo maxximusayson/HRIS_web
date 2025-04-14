@@ -398,77 +398,124 @@
   </div>
 </section>
 
+<!-- Section: More Ways -->
+<section class="relative bg-[#CAF0F8] py-20 font-[Poppins] overflow-hidden">
 
-<!-- Section 5 -->
-<section class="bg-[#CAF0F8] py-20 font-[Poppins]">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-4xl md:text-5xl font-bold text-center text-[#0E1D51] mb-12">Frequently Asked Questions</h2>
+  <!-- Grid Lines -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <!-- Vertical lines -->
+    <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/40"></div>
+    <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/40"></div>
+    <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/40"></div>
+    <!-- Horizontal lines -->
+    <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/40"></div>
+    <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/40"></div>
+    <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/40"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-12">More Ways To Enhance Your Experience</h2>
     
-    <div class="space-y-4" x-data="{ selected: null }">
-
-      <!-- FAQ Item 1 -->
-      <div class="border border-gray-200 rounded-xl bg-white shadow">
-        <button 
-          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
-          @click="selected !== 1 ? selected = 1 : selected = null"
-        >
-          What is an HRIS system?
-          <span x-show="selected !== 1">+</span>
-          <span x-show="selected === 1">-</span>
-        </button>
-        <div x-show="selected === 1" x-collapse class="px-4 pb-4 text-gray-600">
-          An HRIS (Human Resource Information System) helps manage employee data, payroll, attendance, and HR processes all in one centralized platform.
+    <div class="grid md:grid-cols-3 gap-10">
+      
+      <!-- Way 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex justify-center mb-6">
+          <img src="/images/seamless.png" alt="Seamless Integration" class="w-32 h-32 object-cover rounded-full">
         </div>
+        <div class="text-[#0077B6] text-6xl font-bold mb-4">1</div>
+        <h3 class="text-xl font-semibold mb-2 text-[#0E1D51]">Seamless Integration</h3>
+        <p class="text-gray-700 text-lg text-center">Easily integrate your existing systems for a smoother workflow. No hassle, just efficient collaboration.</p>
       </div>
-
-      <!-- FAQ Item 2 -->
-      <div class="border border-gray-200 rounded-xl bg-white shadow">
-        <button 
-          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
-          @click="selected !== 2 ? selected = 2 : selected = null"
-        >
-          Is your HRIS cloud-based?
-          <span x-show="selected !== 2">+</span>
-          <span x-show="selected === 2">-</span>
-        </button>
-        <div x-show="selected === 2" x-collapse class="px-4 pb-4 text-gray-600">
-          Yes! Our HRIS is fully cloud-based, so you can access and manage your employee data anytime, anywhere, securely.
+      
+      <!-- Way 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex justify-center mb-6">
+          <img src="/images/customize.jpg" alt="Customizable Features" class="w-32 h-32 object-cover rounded-full">
         </div>
+        <div class="text-[#0077B6] text-6xl font-bold mb-4">2</div>
+        <h3 class="text-xl font-semibold mb-2 text-[#0E1D51]">Customizable Features</h3>
+        <p class="text-gray-700 text-lg text-center">Tailor the platform to meet your specific needs. Adjust settings, modules, and functionality as per your requirements.</p>
       </div>
-
-      <!-- FAQ Item 3 -->
-      <div class="border border-gray-200 rounded-xl bg-white shadow">
-        <button 
-          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
-          @click="selected !== 3 ? selected = 3 : selected = null"
-        >
-          Can I integrate it with payroll and attendance systems?
-          <span x-show="selected !== 3">+</span>
-          <span x-show="selected === 3">-</span>
-        </button>
-        <div x-show="selected === 3" x-collapse class="px-4 pb-4 text-gray-600">
-          Absolutely! Our HRIS is designed to integrate seamlessly with popular payroll, attendance, and ERP solutions.
+      
+      <!-- Way 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+        <div class="flex justify-center mb-6">
+          <img src="/images/analytics.jpg" alt="Analytics & Insights" class="w-32 h-32 object-cover rounded-full">
         </div>
-      </div>
-
-      <!-- FAQ Item 4 -->
-      <div class="border border-gray-200 rounded-xl bg-white shadow">
-        <button 
-          class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
-          @click="selected !== 4 ? selected = 4 : selected = null"
-        >
-          Is technical support available?
-          <span x-show="selected !== 4">+</span>
-          <span x-show="selected === 4">-</span>
-        </button>
-        <div x-show="selected === 4" x-collapse class="px-4 pb-4 text-gray-600">
-          Yes, we provide 24/7 customer support and dedicated assistance for implementation and troubleshooting.
-        </div>
+        <div class="text-[#0077B6] text-6xl font-bold mb-4">3</div>
+        <h3 class="text-xl font-semibold mb-2 text-[#0E1D51]">Analytics & Insights</h3>
+        <p class="text-gray-700 text-lg text-center">Leverage data to gain valuable insights into your operations. Track performance and make data-driven decisions.</p>
       </div>
 
     </div>
+
+    <div class="mt-16">
+      <h3 class="text-2xl font-semibold text-[#0E1D51] mb-8">Explore More Opportunities</h3>
+      <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto">Unlock new ways to grow your business with a suite of powerful tools. Our platform is designed to help you reach new heights, improve processes, and stay ahead of the competition.</p>
+    </div>
   </div>
 </section>
+
+
+
+
+
+
+<!-- Section 6: How It Works with Gridlines -->
+<section class="relative bg-[#CAF0F8] py-20 font-[Poppins] overflow-hidden">
+  <!-- Grid Lines -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <!-- Vertical lines -->
+    <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <!-- Horizontal lines -->
+    <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left: Image -->
+    <div class="flex justify-center">
+      <img src="/images/faq.png" alt="FAQ Illustration" class="w-full max-w-md">
+    </div>
+
+    <!-- Right: FAQs -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-8 text-center md:text-left">Frequently Asked Questions</h2>
+      
+      <div class="space-y-4" x-data="{ selected: null }">
+
+        <!-- FAQ Items -->
+        <template x-for="(item, index) in [
+          { q: 'What is an HRIS system?', a: 'An HRIS (Human Resource Information System) helps manage employee data, payroll, attendance, and HR processes all in one centralized platform.' },
+          { q: 'Is your HRIS cloud-based?', a: 'Yes! Our HRIS is fully cloud-based, so you can access and manage your employee data anytime, anywhere, securely.' },
+          { q: 'Can I integrate it with payroll and attendance systems?', a: 'Absolutely! Our HRIS is designed to integrate seamlessly with popular payroll, attendance, and ERP solutions.' },
+          { q: 'Is technical support available?', a: 'Yes, we provide 24/7 customer support and dedicated assistance for implementation and troubleshooting.' }
+        ]" :key="index">
+          <div class="border border-gray-200 rounded-xl bg-white shadow">
+            <button 
+              class="w-full flex justify-between items-center p-4 text-lg font-medium text-gray-800 focus:outline-none"
+              @click="selected !== index ? selected = index : selected = null"
+            >
+              <span x-text="item.q"></span>
+              <span x-show="selected !== index">+</span>
+              <span x-show="selected === index">-</span>
+            </button>
+            <div x-show="selected === index" x-collapse class="px-4 pb-4 text-gray-600" x-text="item.a"></div>
+          </div>
+        </template>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
