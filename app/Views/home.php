@@ -487,7 +487,7 @@
 
     <!-- Right: FAQs -->
     <div>
-      <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-8 text-center md:text-left">Frequently Asked Questions (FAQ's)</h2>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-8 text-center md:text-left">Frequently Asked Questions (FAQ)</h2>
       
       <div class="space-y-4" x-data="{ selected: null }">
 
