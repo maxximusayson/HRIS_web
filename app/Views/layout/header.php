@@ -73,7 +73,8 @@
 </div>
 
 
-      <a href="#" class="hover:text-blue-600">Resources</a>
+<a href="<?= base_url('resources'); ?>" class="hover:text-blue-600">Resources</a>
+
       <a href="#" class="hover:text-blue-600">Help & Support</a>
     </nav>
 

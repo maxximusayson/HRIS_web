@@ -257,7 +257,7 @@
   <div class="space-y-6 w-full md:w-1/2">
   <!-- Benefit 1 -->
   <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(1)">
+    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(1)">
       <span class="font-semibold text-lg">Improved Efficiency</span>
       <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -270,7 +270,7 @@
 
   <!-- Benefit 2 -->
   <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(2)">
+    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(2)">
       <span class="font-semibold text-lg">Data Security</span>
       <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -283,7 +283,7 @@
 
   <!-- Benefit 3 -->
   <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(3)">
+    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(3)">
       <span class="font-semibold text-lg">Real-Time Reporting</span>
       <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -296,7 +296,7 @@
 
   <!-- Benefit 4 -->
   <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#2563EB] text-white rounded-lg shadow-lg focus:outline-none hover:bg-[#0E1D51] focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(4)">
+    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(4)">
       <span class="font-semibold text-lg">Employee Self-Service</span>
       <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -487,7 +487,7 @@
 
     <!-- Right: FAQs -->
     <div>
-      <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-8 text-center md:text-left">Frequently Asked Questions</h2>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-8 text-center md:text-left">Frequently Asked Questions (FAQ's)</h2>
       
       <div class="space-y-4" x-data="{ selected: null }">
 
@@ -553,7 +553,7 @@
            a 15.9155 15.9155 0 0 1 0 31.831
            a 15.9155 15.9155 0 0 1 0 -31.831"
         fill="none"
-        stroke="#ffff"
+        stroke="#0E1D51"
         stroke-width="2"
         stroke-linecap="round"
         stroke-dasharray="100"
