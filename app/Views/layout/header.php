@@ -75,7 +75,8 @@
 
 <a href="<?= base_url('resources'); ?>" class="hover:text-blue-600">Resources</a>
 
-      <a href="#" class="hover:text-blue-600">Help & Support</a>
+<a href="<?= site_url('help') ?>" class="hover:text-blue-600">Help & Support</a>
+
     </nav>
 
     <!-- Search + Button -->
@@ -136,8 +137,8 @@
 </div>
 
 
-  <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Resources</a>
-  <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Help & Support</a>
+  <a href="<?= base_url('resources'); ?>" class="block py-2 text-gray-800 hover:text-blue-600">Resources</a>
+  <a href="<?= site_url('help') ?>" class="block py-2 text-gray-800 hover:text-blue-600">Help & Support</a>
 
   <div>
     <input type="text" placeholder="Search..." class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none">

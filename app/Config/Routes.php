@@ -14,4 +14,6 @@ $routes->get('/about/careers', 'Pages::careers');
 
 $routes->get('/resources', 'Resources::index');
 
+$routes->get('/help', 'Help::index');
+
 
