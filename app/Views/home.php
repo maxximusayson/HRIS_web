@@ -15,20 +15,23 @@
 
     <?= view('layout/header') ?>
 <br><br><br><br><br>
+
     <!-- Section 1 -->
     <section class="relative bg-gradient-to-t from-[#CAF0F8] to-white py-40 md:py-48 font-[Poppins] overflow-hidden -mt-24">
  
   <!-- Background Lines (behind content) -->
   <div class="absolute inset-0 pointer-events-none z-0">
-    <!-- Vertical lines -->
-    <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/50"></div>
-    <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/50"></div>
-    <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/50"></div>
-    <!-- Horizontal lines -->
-    <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/50"></div>
-    <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/50"></div>
-    <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
-  </div>
+  <!-- Vertical lines -->
+  <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/80 drop-shadow-sm"></div>
+  <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/80 drop-shadow-sm"></div>
+  <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/80 drop-shadow-sm"></div>
+  
+  <!-- Horizontal lines -->
+  <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/80 drop-shadow-sm"></div>
+  <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/80 drop-shadow-sm"></div>
+  <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/80 drop-shadow-sm"></div>
+</div>
+
 
   <!-- Content (in front) -->
   <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-24 relative z-10">
