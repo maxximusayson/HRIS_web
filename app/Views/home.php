@@ -521,5 +521,73 @@
 
 <?= view('layout/footer'); ?>
 
+<!-- Back to Top with Scroll Progress -->
+<div 
+  x-data="scrollProgress()" 
+  x-init="init()" 
+  class="fixed bottom-6 right-6 z-50"
+>
+  <button 
+    x-show="showButton"
+    @click="scrollToTop"
+    x-transition
+    class="relative w-14 h-14 rounded-full bg-[#1D4ED8] text-white flex items-center justify-center shadow-lg hover:bg-[#1E40AF] focus:outline-none"
+    aria-label="Back to top"
+  >
+    ↑
+    <!-- SVG Circular Progress -->
+    <svg class="absolute top-0 left-0 w-full h-full rotate-[-90deg]" viewBox="0 0 36 36">
+      <!-- Background circle -->
+      <path
+        class="text-gray-300"
+        d="M18 2.0845
+           a 15.9155 15.9155 0 0 1 0 31.831
+           a 15.9155 15.9155 0 0 1 0 -31.831"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      />
+      <!-- Progress path -->
+      <path
+        d="M18 2.0845
+           a 15.9155 15.9155 0 0 1 0 31.831
+           a 15.9155 15.9155 0 0 1 0 -31.831"
+        fill="none"
+        stroke="#ffff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-dasharray="100"
+        :stroke-dashoffset="100 - progress"
+      />
+    </svg>
+  </button>
+</div>
+
+<script>
+  function scrollProgress() {
+    return {
+      progress: 0,
+      showButton: false,
+
+      init() {
+        window.addEventListener('scroll', this.updateProgress.bind(this));
+        this.updateProgress();
+      },
+
+      updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const rawProgress = (scrollTop / docHeight) * 100;
+        this.progress = Math.min(Math.max(rawProgress, 0), 100);
+        this.showButton = scrollTop > 100;
+      },
+
+      scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  }
+</script>
+
 </body>
 </html>
