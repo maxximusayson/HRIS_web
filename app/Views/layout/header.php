@@ -46,31 +46,32 @@
         </div>
       </div>
 
-      <!-- About Us Dropdown -->
-      <div class="relative group" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-        <button @click="open = !open" class="flex items-center space-x-1 hover:text-blue-600 focus:outline-none">
-          <span>About Us</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div x-show="open" x-cloak x-transition class="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-xl w-72 p-6 z-40">
-          <div class="space-y-4 text-base font-medium text-gray-800">
-            <div>
-              <a href="<?= base_url('company') ?>" class="hover:text-blue-500 block">Company</a>
-              <p class="text-sm text-gray-500">Get to know our mission and vision.</p>
-            </div>
-            <div>
-              <a href="<?= base_url('team') ?>" class="hover:text-blue-500 block">Our Team</a>
-              <p class="text-sm text-gray-500">Meet the people behind HRIS.</p>
-            </div>
-            <div>
-              <a href="<?= base_url('careers') ?>" class="hover:text-blue-500 block">Careers</a>
-              <p class="text-sm text-gray-500">Explore job opportunities with us.</p>
-            </div>
-          </div>
-        </div>
+     <!-- About Us Dropdown -->
+<div class="relative group" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+  <button @click="open = !open" class="flex items-center space-x-1 hover:text-blue-600 focus:outline-none">
+    <span>About Us</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div x-show="open" x-cloak x-transition class="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-xl w-72 p-6 z-40">
+    <div class="space-y-4 text-base font-medium text-gray-800">
+      <div>
+        <a href="<?= base_url('about/company') ?>" class="hover:text-blue-500 block">Company</a>
+        <p class="text-sm text-gray-500">Get to know our mission and vision.</p>
       </div>
+      <div>
+        <a href="<?= base_url('about/team') ?>" class="hover:text-blue-500 block">Our Team</a>
+        <p class="text-sm text-gray-500">Meet the people behind HRIS.</p>
+      </div>
+      <div>
+        <a href="<?= base_url('about/careers') ?>" class="hover:text-blue-500 block">Careers</a>
+        <p class="text-sm text-gray-500">Explore job opportunities with us.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <a href="#" class="hover:text-blue-600">Resources</a>
       <a href="#" class="hover:text-blue-600">Help & Support</a>
@@ -119,19 +120,20 @@
   </div>
 
   <!-- About Us Mobile Dropdown -->
-  <div>
-    <button @click="openAbout = !openAbout" class="w-full text-left py-2 flex justify-between items-center text-gray-800 hover:text-blue-600">
-      About Us
-      <svg class="w-5 h-5 transform transition-transform" :class="{ 'rotate-180': openAbout }" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
-    <div x-show="openAbout" x-transition x-cloak class="pl-4 space-y-2 text-sm text-gray-700">
-      <a href="<?= base_url('company') ?>" class="block hover:text-blue-500">Company</a>
-      <a href="<?= base_url('team') ?>" class="block hover:text-blue-500">Our Team</a>
-      <a href="<?= base_url('careers') ?>" class="block hover:text-blue-500">Careers</a>
-    </div>
+<div>
+  <button @click="openAbout = !openAbout" class="w-full text-left py-2 flex justify-between items-center text-gray-800 hover:text-blue-600">
+    About Us
+    <svg class="w-5 h-5 transform transition-transform" :class="{ 'rotate-180': openAbout }" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div x-show="openAbout" x-transition x-cloak class="pl-4 space-y-2 text-sm text-gray-700">
+    <a href="<?= base_url('about/company') ?>" class="block hover:text-blue-500">Company</a>
+    <a href="<?= base_url('about/team') ?>" class="block hover:text-blue-500">Our Team</a>
+    <a href="<?= base_url('about/careers') ?>" class="block hover:text-blue-500">Careers</a>
   </div>
+</div>
+
 
   <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Resources</a>
   <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Help & Support</a>

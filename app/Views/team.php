@@ -10,14 +10,26 @@
 
 <section class="relative font-[Poppins] overflow-hidden bg-gradient-to-b from-white via-[#E0F7FF] to-[#CAF0F8]">
 
+  <!-- Background Lines (behind content) -->
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <!-- Vertical lines -->
+    <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute left-1/2 top-0 h-full w-[2px] bg-white/50"></div>
+    <div class="absolute right-1/4 top-0 h-full w-[2px] bg-white/50"></div>
+    <!-- Horizontal lines -->
+    <div class="absolute top-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/50"></div>
+    <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
+  </div>
+
   <!-- Header Image with Overlay Text -->
-  <div class="relative w-full h-[300px] md:h-[400px] bg-cover bg-center flex items-center justify-center" style="background-image: url('/images/seamless.png');">
+  <div class="relative w-full h-[300px] md:h-[400px] bg-cover bg-center flex items-center justify-center z-10" style="background-image: url('/images/seamless.png');">
       <div class="bg-black/50 absolute inset-0"></div> <!-- subtle dark overlay for contrast -->
       <h1 class="relative text-white text-4xl md:text-5xl font-bold">Our Team</h1>
   </div>
 
   <!-- Team Members Grid -->
-  <div class="py-16">
+  <div class="py-16 relative z-10">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
@@ -66,6 +78,5 @@
       </div>
   </div>
 </section>
-
 
 <?= view('layout/footer'); ?>
