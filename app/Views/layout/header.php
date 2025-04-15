@@ -1,6 +1,9 @@
 <!-- Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
 <!-- Hide x-cloak until Alpine loads -->
 <style>[x-cloak] { display: none !important; }</style>
 

@@ -1,0 +1,28 @@
+{
+  "name": "hris_web",
+  "version": "1.0.0",
+  "description": "- Maxximus Ayson  \r - Rhobie Paring  \r - Miles Gabriel Abude",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxximusayson/HRIS_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxximusayson/HRIS_web/issues"
+  },
+  "homepage": "https://github.com/maxximusayson/HRIS_web#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
+  }
+}
