@@ -9,7 +9,11 @@
   
 
 <div class="relative min-h-screen bg-gradient-to-b from-white to-[#CAF0F8] py-12">
-
+ <!-- Hero Header -->
+ <div class="relative w-full h-[300px] md:h-[400px] bg-cover bg-center flex items-center justify-center z-10" style="background-image: url('/images/seamless.png');">
+      <div class="bg-black/50 absolute inset-0"></div>
+      <h1 class="relative text-white text-4xl md:text-5xl font-bold">Resources</h1>
+  </div>
 
     <!-- Grid Lines -->
     <div class="absolute inset-0 pointer-events-none z-0">
@@ -25,13 +29,9 @@
     <!-- End Grid Lines -->
 
     <div class="relative z-10 max-w-7xl mx-auto px-6">
-        <br><br><br><br><br><br><br>
+        <br><br>
 
-        <h1 class="text-4xl font-bold text-gray-800 mb-8">HRIS Resources</h1>
 
-        <p class="text-gray-600 mb-12 text-lg">
-            Access essential HR documents, policies, and tools for a smooth and productive work experience.
-        </p>
 
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <!-- Resource Card 1 -->
@@ -104,7 +104,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div><br><br><br><br><br><br><br>
 </div>
 
 <?= view('layout/footer') ?>
