@@ -8,76 +8,78 @@
 <header class="fixed top-0 left-0 w-full bg-gradient-to-b from-[#CAF0F8] to-white shadow-sm font-[Poppins] z-50"
         x-data="{ mobileMenu: false }">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <div class="flex-shrink-0">
-      <div class="h-16 w-16 flex items-center justify-center text-[#0E1D51] font-bold text-xl">
-        LOGO
-      </div>
-    </div>
-
-    <!-- Desktop Nav -->
-    <nav class="hidden lg:flex items-center space-x-6 text-lg text-gray-800">
-      <a href="<?= base_url('/') ?>" class="hover:text-blue-600">Home</a>
-
-      <!-- HR Solutions Dropdown -->
-      <div class="relative group" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-        <button @click="open = !open" class="flex items-center space-x-1 hover:text-blue-600 focus:outline-none">
-          <span>HR Solutions</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div x-show="open" x-cloak x-transition class="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-xl w-72 p-6 z-40">
-          <h3 class="text-blue-600 font-semibold mb-2">Core Modules</h3>
-          <ul class="space-y-3 text-base font-medium text-gray-800">
-            <li>
-              <a href="#" class="hover:text-blue-500 block">Payroll Management</a>
-              <p class="text-sm text-gray-500">Manage employee salaries, taxes, and deductions.</p>
-            </li>
-            <li>
-              <a href="#" class="hover:text-blue-500 block">Leave Tracking</a>
-              <p class="text-sm text-gray-500">Track vacation days, sick leaves, and approvals.</p>
-            </li>
-            <li>
-              <a href="#" class="hover:text-blue-500 block">Employee Directory</a>
-              <p class="text-sm text-gray-500">Browse and manage employee contact details.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-     <!-- About Us Dropdown -->
-<div class="relative group" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-  <button @click="open = !open" class="flex items-center space-x-1 hover:text-blue-600 focus:outline-none">
-    <span>About Us</span>
-    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-    </svg>
-  </button>
-  <div x-show="open" x-cloak x-transition class="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-xl w-72 p-6 z-40">
-    <div class="space-y-4 text-base font-medium text-gray-800">
-      <div>
-        <a href="<?= base_url('about/company') ?>" class="hover:text-blue-500 block">Company</a>
-        <p class="text-sm text-gray-500">Get to know our mission and vision.</p>
-      </div>
-      <div>
-        <a href="<?= base_url('about/team') ?>" class="hover:text-blue-500 block">Our Team</a>
-        <p class="text-sm text-gray-500">Meet the people behind HRIS.</p>
-      </div>
-      <div>
-        <a href="<?= base_url('about/careers') ?>" class="hover:text-blue-500 block">Careers</a>
-        <p class="text-sm text-gray-500">Explore job opportunities with us.</p>
-      </div>
-    </div>
+<!-- Logo -->
+<div class="flex-shrink-0 ml-[-150px]"> <!-- Adjusted margin-left here -->
+  <div class="h-16 w-16 flex items-center justify-center text-[#0E1D51] font-bold text-xl">
+    LOGO
   </div>
 </div>
 
 
-<a href="<?= base_url('resources'); ?>" class="hover:text-blue-600">Resources</a>
+<!-- Desktop Nav -->
+<nav class="hidden lg:flex items-center space-x-8 text-xl text-gray-800">
 
-<a href="<?= site_url('help') ?>" class="hover:text-blue-600">Help & Support</a>
+  <a href="<?= base_url('/') ?>" class="hover:text-blue-600 -ml-2">Home</a>
 
-    </nav>
+  <!-- HR Solutions Dropdown -->
+  <div class="relative group ml-4" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <button @click="open = !open" class="flex items-center space-x-2 hover:text-blue-600 focus:outline-none">
+      <span>HR Solutions</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    <div x-show="open" x-cloak x-transition class="absolute top-full left-0 mt-3 bg-white shadow-lg rounded-xl w-72 p-6 z-40">
+      <h3 class="text-blue-600 font-semibold mb-3 text-xl">Core Modules</h3>
+      <ul class="space-y-4 text-xl font-medium text-gray-800">
+        <li>
+          <a href="#" class="hover:text-blue-500 block">Payroll Management</a>
+          <p class="text-sm text-gray-500 mt-1">Manage employee salaries, taxes, and deductions.</p>
+        </li>
+        <li>
+          <a href="#" class="hover:text-blue-500 block">Leave Tracking</a>
+          <p class="text-sm text-gray-500 mt-1">Track vacation days, sick leaves, and approvals.</p>
+        </li>
+        <li>
+          <a href="#" class="hover:text-blue-500 block">Employee Directory</a>
+          <p class="text-sm text-gray-500 mt-1">Browse and manage employee contact details.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- About Us Dropdown -->
+  <div class="relative group ml-4" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+    <button @click="open = !open" class="flex items-center space-x-2 hover:text-blue-600 focus:outline-none">
+      <span>About Us</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    <div x-show="open" x-cloak x-transition class="absolute top-full left-0 mt-3 bg-white shadow-lg rounded-xl w-72 p-6 z-40">
+      <div class="space-y-4 text-xl font-medium text-gray-800">
+        <div>
+          <a href="<?= base_url('about/company') ?>" class="hover:text-blue-500 block">Company</a>
+          <p class="text-sm text-gray-500 mt-1">Get to know our mission and vision.</p>
+        </div>
+        <div>
+          <a href="<?= base_url('about/team') ?>" class="hover:text-blue-500 block">Our Team</a>
+          <p class="text-sm text-gray-500 mt-1">Meet the people behind HRIS.</p>
+        </div>
+        <div>
+          <a href="<?= base_url('about/careers') ?>" class="hover:text-blue-500 block">Careers</a>
+          <p class="text-sm text-gray-500 mt-1">Explore job opportunities with us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="<?= base_url('resources'); ?>" class="hover:text-blue-600 ml-4">Resources</a>
+
+  <a href="<?= site_url('help') ?>" class="hover:text-blue-600 ml-4">Help & Support</a>
+
+</nav>
+
 
     <!-- Search + Button -->
     <div class="hidden sm:flex items-center space-x-4">
