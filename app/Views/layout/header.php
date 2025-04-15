@@ -1,9 +1,6 @@
 <!-- Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-
 <!-- Hide x-cloak until Alpine loads -->
 <style>[x-cloak] { display: none !important; }</style>
 
@@ -84,50 +81,14 @@
 </nav>
 
 
-<!-- Search + Button -->
-<div class="hidden sm:flex items-center space-x-4">
-  <div class="relative">
-    <!-- Search Input -->
-    <input id="searchInput" type="text" placeholder="Search..." class="pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none" oninput="toggleClearButton()">
-    
-    <!-- Search Icon -->
-    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
-    </svg>
-
-    <!-- Clear Button (x) -->
-    <button id="clearButton" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-5 h-5 opacity-0 cursor-pointer" onclick="clearSearch()">
-      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-  </div>
-</div>
-
-<script>
-  // Function to toggle the visibility of the clear button based on input value
-  function toggleClearButton() {
-    const input = document.getElementById("searchInput");
-    const clearButton = document.getElementById("clearButton");
-    // Show the clear button if input is not empty, otherwise hide it
-    if (input.value.length > 0) {
-      clearButton.classList.remove("opacity-0");
-      clearButton.classList.add("opacity-100");
-    } else {
-      clearButton.classList.remove("opacity-100");
-      clearButton.classList.add("opacity-0");
-    }
-  }
-
-  // Function to clear the search input
-  function clearSearch() {
-    const input = document.getElementById("searchInput");
-    input.value = ""; // Clear the input field
-    toggleClearButton(); // Hide the clear button after clearing input
-  }
-  
-</script>
-
+    <!-- Search + Button -->
+    <div class="hidden sm:flex items-center space-x-4">
+      <div class="relative">
+        <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+        </svg>
+      </div>
       <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition-all duration-300 font-medium">
         How it works
       </a>
