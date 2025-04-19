@@ -185,6 +185,9 @@
 
 
 
+<!-- AOS CSS (place in <head> of your HTML) -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 <!-- Section Video -->
 <section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
 
@@ -203,24 +206,21 @@
   <!-- Main Content -->
   <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-12 flex flex-col md:flex-row items-center gap-12">
 
-<!-- Video -->
-<div class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
-  <iframe src="https://www.youtube.com/embed/K4TOrB7at0Y?si=yx4sHB4MSF_SaW52" 
-          frameborder="0" 
-          allowfullscreen 
-          class="rounded-lg shadow-lg w-full h-96"></iframe> <!-- Fixed height -->
-</div>
-
-
+    <!-- Video -->
+    <div class="w-full md:w-3/4 lg:w-2/3 xl:w-1/2" data-aos="fade-up">
+      <iframe src="https://www.youtube.com/embed/K4TOrB7at0Y?si=yx4sHB4MSF_SaW52" 
+              frameborder="0" 
+              allowfullscreen 
+              class="rounded-lg shadow-lg w-full h-96"></iframe>
+    </div>
 
     <!-- Text Content -->
-    <div class="w-full md:w-1/2 text-center md:text-left">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-[#0E1D51] mb-6 leading-tight">
-  Simple, Accurate, and<br>
-  Stress-Free People<br>
-  Management with HRIS
-</h2>
-
+    <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0E1D51] mb-6 leading-tight">
+        Simple, Accurate, and<br>
+        Stress-Free People<br>
+        Management with HRIS
+      </h2>
 
       <p class="text-gray-700 mb-8 text-base md:text-lg">
         Stay compliant and thrive with Sprout’s HR and Payroll solution. Get top-rated solutions and the expert support you need for managing your teams effectively in the Philippines.
@@ -234,11 +234,22 @@
   </div>
 </section>
 
+<!-- AOS JS (place before </body>) -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
+
+
+<!-- Section 3 -->
 <!-- Section 3 -->
 <section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
 
-  <!-- Grid Lines -->
+  <!-- Grid Lines (No animation here) -->
   <div class="absolute inset-0 pointer-events-none z-0">
     <!-- Vertical lines -->
     <div class="absolute left-1/4 top-0 h-full w-[2px] bg-white/50"></div>
@@ -250,69 +261,68 @@
     <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
   </div>
 
-  <h2 class="text-4xl md:text-5xl font-bold text-center mb-8" style="color: #0E1D51;">
-  Benefits of Using the HRIS Portal
-</h2>
-
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-8" style="color: #0E1D51;" data-aos="fade-up">
+    Benefits of Using the HRIS Portal
+  </h2>
 
   <!-- Flex container for content and image -->
   <div class="flex flex-col md:flex-row w-full max-w-7xl space-y-6 md:space-y-0 items-center justify-between">
-  <div class="space-y-6 w-full md:w-1/2">
-  <!-- Benefit 1 -->
-  <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(1)">
-      <span class="font-semibold text-lg">Improved Efficiency</span>
-      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </button>
-    <div id="content-1" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
-      <p>Streamline HR processes, automate tasks, and reduce manual work, making operations faster and more efficient.</p>
-    </div>
-  </div>
+    <div class="space-y-6 w-full md:w-1/2">
+      <!-- Benefit 1 -->
+      <div class="border-b border-gray-200 relative">
+        <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(1)" data-aos="fade-up">
+          <span class="font-semibold text-lg">Improved Efficiency</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-1" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+          <p>Streamline HR processes, automate tasks, and reduce manual work, making operations faster and more efficient.</p>
+        </div>
+      </div>
 
-  <!-- Benefit 2 -->
-  <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(2)">
-      <span class="font-semibold text-lg">Data Security</span>
-      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </button>
-    <div id="content-2" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
-      <p>Keep employee data secure with encryption, controlled access, and regular audits to ensure privacy and compliance.</p>
-    </div>
-  </div>
+      <!-- Benefit 2 -->
+      <div class="border-b border-gray-200 relative">
+        <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(2)" data-aos="fade-up">
+          <span class="font-semibold text-lg">Data Security</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-2" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+          <p>Keep employee data secure with encryption, controlled access, and regular audits to ensure privacy and compliance.</p>
+        </div>
+      </div>
 
-  <!-- Benefit 3 -->
-  <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(3)">
-      <span class="font-semibold text-lg">Real-Time Reporting</span>
-      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </button>
-    <div id="content-3" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
-      <p>Access up-to-date reports at any time, allowing better decision-making and timely interventions when needed.</p>
-    </div>
-  </div>
+      <!-- Benefit 3 -->
+      <div class="border-b border-gray-200 relative">
+        <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(3)" data-aos="fade-up">
+          <span class="font-semibold text-lg">Real-Time Reporting</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-3" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+          <p>Access up-to-date reports at any time, allowing better decision-making and timely interventions when needed.</p>
+        </div>
+      </div>
 
-  <!-- Benefit 4 -->
-  <div class="border-b border-gray-200 relative">
-    <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(4)">
-      <span class="font-semibold text-lg">Employee Self-Service</span>
-      <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </button>
-    <div id="content-4" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
-      <p>Allow employees to update their personal information, access pay slips, and submit requests without HR intervention.</p>
+      <!-- Benefit 4 -->
+      <div class="border-b border-gray-200 relative">
+        <button class="w-full text-left p-5 bg-[#ffff] text-black rounded-lg shadow-lg focus:outline-none  focus:ring-2 focus:ring-blue-500 flex justify-between items-center transition-all" onclick="toggleDropdown(4)" data-aos="fade-up">
+          <span class="font-semibold text-lg">Employee Self-Service</span>
+          <svg class="w-6 h-6 transform transition-transform duration-300" id="arrow-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="content-4" class="hidden absolute top-full left-0 w-full px-5 py-3 bg-white text-gray-700 text-sm rounded-lg shadow-md mt-2 z-50">
+          <p>Allow employees to update their personal information, access pay slips, and submit requests without HR intervention.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
     <!-- Right side (Large Image) -->
-    <div class="w-full md:w-1/2 z-20 md:ml-6">
+    <div class="w-full md:w-1/2 z-20 md:ml-6" data-aos="fade-up">
       <img src="/images/home/h1.jpg" alt="HRIS Portal" class="w-full h-auto rounded-lg shadow-lg">
     </div>
   </div>
@@ -336,7 +346,6 @@
 
 
 <!-- SECTION 4 -->
-
 <section class="relative bg-[#CAF0F8] py-20 font-[Poppins] flex flex-col items-center justify-center overflow-hidden">
 
   <!-- Grid Lines -->
@@ -350,56 +359,63 @@
     <div class="absolute top-1/2 left-0 w-full h-[2px] bg-white/50"></div>
     <div class="absolute bottom-1/4 left-0 w-full h-[2px] bg-white/50"></div>
   </div>
-<br><br>
+  <br><br>
+  
   <div class="max-w-7xl mx-auto px-6 z-10">
-  <h2 class="text-5xl font-bold text-center text-[#0E1D51] mb-8">Our HRIS Products</h2>
+    <h2 class="text-5xl font-bold text-center text-[#0E1D51] mb-8" data-aos="fade-up">Our HRIS Products</h2>
+    
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
       <!-- Product 1 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Employee Management</h3>
         <p class="text-gray-600">
           Effortlessly manage employee records, track personal details, and maintain up-to-date information in a secure, centralized system.
         </p>
       </div>
       <!-- Product 2 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Payroll Solutions</h3>
         <p class="text-gray-600">
           Automate payroll calculations, tax deductions, and ensure timely and accurate salary distribution, all while complying with local regulations.
         </p>
       </div>
       <!-- Product 3 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Leave and Attendance</h3>
         <p class="text-gray-600">
           Track employee attendance and manage leave requests with ease. Ensure a smooth workflow with real-time data and customizable policies.
         </p>
       </div>
       <!-- Product 4 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Performance Management</h3>
         <p class="text-gray-600">
           Assess and improve employee performance with customizable evaluation criteria, feedback tools, and goal tracking.
         </p>
       </div>
       <!-- Product 5 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Recruitment Management</h3>
         <p class="text-gray-600">
           Simplify the hiring process with job posting management, candidate tracking, and interview scheduling—all in one platform.
         </p>
       </div>
       <!-- Product 6 -->
-      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Training & Development</h3>
         <p class="text-gray-600">
           Monitor employee skill development and manage training programs to foster growth and retention within your workforce.
         </p>
       </div>
-      
     </div>
   </div>
 </section>
+
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration
+  });
+</script>
 
 <!-- Section: More Ways -->
 <section class="relative bg-[#CAF0F8] py-20 font-[Poppins] overflow-hidden">
@@ -418,12 +434,12 @@
 
   <!-- Main Content -->
   <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-12">More Ways To Enhance Your Experience</h2>
+    <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-12" data-aos="fade-up">More Ways To Enhance Your Experience</h2>
     
     <div class="grid md:grid-cols-3 gap-10">
       
       <!-- Way 1 -->
-      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <div class="flex justify-center mb-6">
           <img src="/images/seamless.png" alt="Seamless Integration" class="w-32 h-32 object-cover rounded-full">
         </div>
@@ -433,7 +449,7 @@
       </div>
       
       <!-- Way 2 -->
-      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <div class="flex justify-center mb-6">
           <img src="/images/customize.jpg" alt="Customizable Features" class="w-32 h-32 object-cover rounded-full">
         </div>
@@ -443,7 +459,7 @@
       </div>
       
       <!-- Way 3 -->
-      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300" data-aos="fade-up">
         <div class="flex justify-center mb-6">
           <img src="/images/analytics.jpg" alt="Analytics & Insights" class="w-32 h-32 object-cover rounded-full">
         </div>
@@ -454,12 +470,18 @@
 
     </div>
 
-    <div class="mt-16">
+    <div class="mt-16" data-aos="fade-up">
       <h3 class="text-2xl font-semibold text-[#0E1D51] mb-8">Explore More Opportunities</h3>
       <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto">Unlock new ways to grow your business with a suite of powerful tools. Our platform is designed to help you reach new heights, improve processes, and stay ahead of the competition.</p>
     </div>
   </div>
 </section>
+
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration
+  });
+</script>
 
 
 
@@ -484,12 +506,12 @@
   <div class="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
     
     <!-- Left: Image -->
-    <div class="flex justify-center">
+    <div class="flex justify-center" data-aos="fade-up">
       <img src="/images/faq.png" alt="FAQ Illustration" class="w-full max-w-md">
     </div>
 
     <!-- Right: FAQs -->
-    <div>
+    <div data-aos="fade-up">
       <h2 class="text-4xl md:text-5xl font-bold text-[#0E1D51] mb-8 text-center md:text-left">Frequently Asked Questions (FAQ)</h2>
       
       <div class="space-y-4" x-data="{ selected: null }">
@@ -519,6 +541,11 @@
   </div>
 </section>
 
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration
+  });
+</script>
 
 
 
