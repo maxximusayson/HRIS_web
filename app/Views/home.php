@@ -223,7 +223,7 @@
       </h2>
 
       <p class="text-gray-700 mb-8 text-base md:text-lg">
-        Stay compliant and thrive with Sprout’s HR and Payroll solution. Get top-rated solutions and the expert support you need for managing your teams effectively in the Philippines.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
 
       <a href="#" class="inline-block bg-[#2563EB] text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-[#2563EB] transition-all">
