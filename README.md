@@ -3,7 +3,7 @@
 
 
 ### Frontend
-- HTML5  
+- HTML
 - Tailwind CSS  
 
 
